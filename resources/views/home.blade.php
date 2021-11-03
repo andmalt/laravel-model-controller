@@ -3,7 +3,19 @@
 @section('title','Home')
     
 @section('contain')
-    <div id="home">
-        <h1>Prova</h1>
+    <div class="container">
+        
+            <div class="row">
+                @foreach ($movies as $movie)
+                <div class="col-12 col-md-6 col-lg-4 card">
+                    <h1>{{ $movie['title'] }}</h1>
+                    <h2>{{ $movie['original_title'] }}</h2>
+                    <p>{{ $movie['nationality'] }}</p>
+                    <p>{{ $movie['date'] }}</p>
+                    <p>{{ $movie['vote'] }}</p>
+                </div> 
+                @endforeach
+            </div>
+        
     </div>
 @endsection
