@@ -7,9 +7,9 @@
         
             <div class="row">
                 @foreach ($movies as $movie)
-                <div class="col-12 col-md-6 col-lg-4 card">
+                <div class="col-12 col-md-6 col-lg-3 card">
                     <h1>{{ $movie['title'] }}</h1>
-                    <h2>{{ $movie['original_title'] }}</h2>
+                    <h3>{{ $movie['original_title'] }}</h2>
                     <p>{{ $movie['nationality'] }}</p>
                     <p>{{ $movie['date'] }}</p>
                     <p>{{ $movie['vote'] }}</p>
